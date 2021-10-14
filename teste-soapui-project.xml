@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9ff06992-50ee-47f9-ba05-b9fe6ae94913" activeEnvironment="Default" name="teste" resourceRoot="${projectDir}" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:mockService id="5fc3ffbe-3b0f-4222-a4e0-dd34df0d9546" port="8088" path="/MockCalc" host="irg-VM-PC" name="MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="Sum" id="f29b230a-35b6-493b-8e5f-919a7d46d8b1" interface="BasicHttpBinding_ICalc" operation="Sum"><con:settings/><con:defaultResponse>999</con:defaultResponse><con:dispatchStyle>XPATH</con:dispatchStyle><con:response name="999" id="d54a10d8-d990-461b-94ef-a8459008851e" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:SumResponse>
+         <!--Optional:-->
+         <tem:SumResult>999</tem:SumResult>
+      </tem:SumResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICalc/Sum"/></con:response><con:response name="000" id="35ed5567-a44c-4027-a173-50eab4b65326" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:SumResponse>
+         <tem:SumResult>000</tem:SumResult>
+      </tem:SumResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICalc/Sum"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties><con:property><con:name>version</con:name><con:value>1.0.0</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
